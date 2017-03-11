@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+body {
+	background-color: #171717;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:26px;
+	font-weight:100;
+	margin:0;
+}
+
+
+.header 
+{
+	font-size: 40px;
+	font-weight: bold;
+	color: #171717;
+}
+
+.outer
+{
+	max-width:1120px; 
+	margin:0 auto;
+	box-shadow: 0px 0px 10px #000;	
+}
+
+
+.inner
+{
+	max-width:1120px; 
+	width:1120px;
+	margin:0 auto; 
+	background-color:#EC185B;
+	background-image:url("img/page_bg.png") ;
+	background-repeat:no-repeat;
+	background-size: 1120px 9315px;
+}
+
+.bodySection
+{
+	position:relative;	
+	margin-bottom:160px;
+	width:1120px;
+
+}
+
+.headerType
+{
+	left: 68px;
+	position: absolute;
+	text-align: center;
+	top: 120px;
+	width: 428px;
+}
+
+.shareBlock
+{
+	background-image:url("img/share_bg.png");
+	width:375px;
+	height:107px;
+	margin:60px auto 10px;
+}
+
+.shareBlockBottom
+{
+	width:475px;
+	height:107px;
+	margin:60px auto 10px;
+}
+
+.shareBlock img, .shareBlockBottom img
+{
+	padding:18px;
+	margin:0px 15px;
+}
+
+.headerImage
+{
+	margin-left:508px;
+/*	margin-top: 20px;
+*/	margin-bottom:30px;
+}
+
+.headerLogo
+{
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+
+.chartsType
+{
+	margin:130px auto 23px auto;
+	width:850px;
+	
+}
+
+.productsType
+{
+	margin:0px auto 53px auto;
+	width:850px;
+	
+}
+
+#brushesSection .brushesType img
+{
+	padding-top:40px;
+}
+
+.brushesType
+{
+	position:absolute;
+	top:170px;
+	left:550px;
+	text-align:center;
+	width:470px;
+}
+
+.brushesImage
+{
+	padding-left:40px;
+}
+
+#headerSection
+{
+	background-image:url("img/header_bg.jpg");
+	background-repeat:no-repeat;
+	margin-bottom: 0px;
+}
+
+#chartsSection,#productsSection, #lashesSection, #browserSection, #effectsSection, #sharingSection
+{
+		text-align:center;
+}
+
+#chartsSection
+{
+	 margin-bottom: 50px;
+}
+
+
+#browserSection
+{
+	margin-top:-30px;
+}
+
+.lashesType
+{
+	margin:0px auto 53px auto;
+	width:900px;
+	
+}
+
+#lashesSection img
+{
+	padding-left:20px;
+}
+
+.browserType
+{
+	margin: -70px auto 25px;
+	width:540px;	
+}
+
+.effectsType
+{
+	left: 124px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 460px;
+	
+}
+
+.sharingType
+{
+	margin: 0px auto 35px auto;
+	width:900px;	
+}
+
+#controlPanelSection
+{
+	margin-top:-120px;
+	margin-bottom: 0px;
+}
+
+.controlPanelType
+{
+	left: 83px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 950px;
+	
+}
+
+/*.footnoteType {
+  float: right;
+  font-size: 10px;
+  font-style: italic;
+  position: relative;
+  right: 11px;
+  text-align: right;
+  top: 12px;
+  z-index: 99;
+}
+*/
+.footnoteType {
+font-size: 16px;
+position: relative;
+top: 20px;
+z-index: 99;
+}
+
+
+@media screen and (max-width: 980px){
+.controlPanelType
+{
+		font-size:20px;
+}
+
+}
+
+.downloadDark
+{
+	margin-top:50px;
+	cursor:pointer;
+}
+
+.downloadButton
+{
+	display:inline;
+	cursor:pointer;
+	width:100px;
+	margin:40px;
+}
+
+
+.downloadLinkApple
+{
+	width: 185px;
+	float: left;	
+	margin-left:20px;
+
+}
+
+.downloadLinkAndroid
+{
+	width: 185px;
+	float: right;
+	margin-right:20px;
+}
+
+
+.downloadPink
+{
+	cursor:pointer;
+	padding:80px;
+}
+
+.footerSection
+{
+	text-align:center;
+	background-color:#171717;
+}
+	
