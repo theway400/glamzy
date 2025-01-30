@@ -1,0 +1,33 @@
+.blueButtonLink, .blackButtonLink{
+    cursor: pointer; display: block; width: 220px;  height: 48px; text-decoration: none; padding: 5px;text-align: center; line-height: 45px; margin: 15px auto;
+      font-family: Helvetica, Arial, sans-serif; letter-spacing: .6px; font-size: 19px; font-style: oblique; background-color: rgb(212, 20, 90); border: none; color: white;
+      -moz-box-shadow: 6px 8px 0px rgba(0,0,50,0.2); -webkit-box-shadow: 6px 8px 0px rgba(0,0,50,0.2); box-shadow: 6px 8px 0px rgba(0,0,50,0.2);
+      transition: background-color 0.7s ease-in-out; border-radius: 4px;
+  }
+  .blackButtonLink{background-color: #3c3c3c;}
+.blueButtonLink:hover{
+  background-color: #575757; transition: background-color .1s ease-in-out;
+}
+
+.blackButtonLink:hover{
+  background-color: #777; transition: background-color .1s ease-in-out;
+}
+
+#footer{background-color: rgb(47, 49, 56); min-height: 240px; text-align: left; padding: 30px 0 0 0; position: absolute; width: 100%; color: rgb(212, 20, 90);
+
+}
+.footerContent{width: 250px; border-top: 2px solid rgb(212, 20, 90); margin: 0 20px 0 20px; display: inline-block; vertical-align: top; padding: 10px 0 0 0;}
+.footerContent .blueButtonLink{margin: 20px 0;}
+.footerContent p{margin: 0;}
+#linkFooter{position: absolute; bottom: 10px; right: 10px; font-size: 13px; color: rgb(212, 20, 90);}
+#linkFooter a{color: rgb(212, 20, 90); text-decoration: underline;}
+/* #ctaFooter{position: absolute; right: 20px; bottom: 30px;} */
+#contactDiv{color: white; position: absolute; right: 30px; top: 20px; text-align: right;}
+#contactDiv .blueButtonLink{margin: 0px;}
+
+.header3{font-size: 17px;font-family: Helvetica, Arial, sans-serif;font-style: italic;color: rgb(212, 20, 90);line-height: 20px;margin: 0;}
+
+
+@media only screen and (max-device-width: 600px) {
+  #ctaFooter{display: none;}
+}

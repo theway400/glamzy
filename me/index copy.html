@@ -1,0 +1,193 @@
+<html>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    width: 101%;
+    overflow: hidden;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  .middle {
+    /* position: absolute; */
+    /* position: fixed; */
+
+   
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    /* overflow-x: scroll; */
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+
+  .middleImages {
+    padding: 60 0 0 0;
+
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  .ssImage {
+    display: inline;
+    margin-right: -5px;
+  }
+
+
+
+  .ssImage img {
+    /* width: 300px; */
+    /* height: auto; */
+    height: calc(100% - 60px)
+  }
+
+  @media only screen and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    body,
+  html {
+    height: 100%;
+    margin: 0;
+    width: 101%;
+    overflow-y: scroll;
+  }
+
+    .middle {
+      /* position: absolute; */
+      /* position: fixed; */
+
+      /* text-align: center;
+      margin: auto;
+      width: 100%;
+      
+      padding: 0 0 0 0; */
+      white-space: normal;
+      overflow-x: hidden;
+      height: unset;
+      width: 101%;
+
+    }
+
+
+    .ssImage {
+      display: block;
+      /* margin-right: -5px; */
+    }
+
+    .ssImage img {
+      /* width: 300px; */
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  #vid {
+    height: calc(100% - 65px)
+  }
+
+  #logo
+  {
+    position: fixed;
+  }
+
+  #dlBtn
+  {
+    float: right;
+    margin: 0 10 10 0;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+  }
+
+  #dlBtn img
+  {
+    width: 110px;
+    cursor: pointer;
+
+  }
+
+</style>
+
+<head>
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  
+  <link rel="stylesheet" type="text/css" href="css/misc.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div id="logo"><img src="img/site/logo_light.png" srcset="img/site/logo_light_r.png 2x"  srcset="img/site/logo_light_r.png 3x">
+    <div id="dlBtn"><a href="http://www.apple.com"><img src="img/site/dlStore.png" srcset="img/site/dlStore.png 2x" ></a></div>
+  </div>
+
+  <div id="imgContent" class="middle">
+    <div class="middleImages">
+      <!-- <video id="vid" class="ssImage" width="320" height="240" controls>
+        <source src="img/app_preview.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+      <div class="ssImage"><img src="img/ss1.jpg" srcset="img/ss1.jpg 2x"></div>
+      <div class="ssImage"><img src="img/ss2.jpg" srcset="img/ss2.jpg 2x"></div>
+      <div class="ssImage"><img src="img/ss3.jpg" srcset="img/ss3.jpg 2x"></div>
+      <div class="ssImage"><img src="img/ss4.jpg" srcset="img/ss4.jpg 2x"></div>
+      <div class="ssImage"><img src="img/ss5.jpg" srcset="img/ss5.jpg 2x"></div>
+      <div class="ssImage"><img src="img/ss6.jpg" srcset="img/ss6.jpg 2x"></div>
+    </div>
+  </div>
+  <div class="bottomleft">
+    <!-- <p>Some text</p> -->
+  </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+  function scrollHorizontally(e) {
+    // if (window.innerWidth < 812) {
+    //   return
+    // }
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    // a = Math.abs((e.wheelDelta || -e.detail));
+    // console.log(a);
+    document.getElementById('imgContent').scrollLeft -= (delta * 30); // Multiplied by 40
+    e.preventDefault();
+  }
+
+  if (document.getElementById('imgContent').addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    document.getElementById('imgContent').addEventListener('mousewheel', scrollHorizontally, false);
+    // Firefox
+    document.getElementById('imgContent').addEventListener('DOMMouseScroll', scrollHorizontally, false);
+  } else {
+    // IE 6/7/8
+    document.getElementById('imgContent').attachEvent('onmousewheel', scrollHorizontally);
+  }
+
+</script>

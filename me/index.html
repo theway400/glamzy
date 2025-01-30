@@ -1,0 +1,286 @@
+<html>
+<style>
+  body,
+  html {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(211, 28, 91);
+    overflow-x: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  .middle {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30 0 0 0;
+    overflow-x: hidden;
+
+  }
+
+  .middleImages {
+    padding: 60 0 0 0;
+
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  .ssImage {
+    display: inline;
+    margin-right: -5px;
+  }
+
+  .ssImage img {
+    height: calc(90% - 60px);
+  }
+
+
+  #vid {
+    height: calc(100% - 65px)
+  }
+
+  #logo {
+    position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(47, 49, 56);
+  padding: 20px 0 0 10px;
+  -moz-box-shadow: 0px 5px 3px rgba(0,0,50,0.5); -webkit-box-shadow: 0px 5px 3px rgba(0,0,50,0.5); box-shadow: 0px 5px 3px rgba(0,0,50,0.5);
+
+}
+
+
+  #dlBtn
+  {
+    float: right;
+    margin: 0 10 10 0;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+  }
+
+  #dlBtn img
+  {
+    width: 110px;
+    cursor: pointer;
+
+  }
+
+  .midContent{
+    width: 100%;
+    height: 100px;
+    display: none;
+    background-color: rgb(204, 215, 237);
+
+  }
+
+  .topImages {
+  margin-bottom: 10px;
+}
+
+#sidebar{
+
+  position: fixed;
+  top: 200px;
+  left: 0px;
+  width: 40px;
+  padding: 4px;
+  /* height: 300px; */
+  background-color: rgb(47, 49, 56);
+  z-index: 99;
+  -moz-box-shadow: 2px 3px 3px rgba(0,0,50,0.5); 
+  -webkit-box-shadow: 2px 3px 3px rgba(0,0,50,0.5);
+  box-shadow: 2px 3px 3px rgba(0,0,50,0.5);
+
+}
+
+a{
+  text-decoration: none;
+}
+
+#sidebar img{
+  width: 40px;
+}
+
+.pinkButtonLink{
+    cursor: pointer; display: block; width: 220px;  height: 48px; text-decoration: none; padding: 5px;text-align: center;
+     line-height: 45px; margin: 10  0 0  0;
+      font-family: Helvetica, Arial, sans-serif; letter-spacing: .6px; 
+      font-size: 18px; font-style: oblique; 
+      background-color: rgb(211, 28, 91); border: none; color: white;
+      -moz-box-shadow: 6px 8px 0px rgba(0,0,50,0.2); -webkit-box-shadow: 6px 8px 0px rgba(0,0,50,0.2); box-shadow: 6px 8px 0px rgba(0,0,50,0.2);
+      transition: color 0.7s ease-in-out;
+  }
+.pinkButtonLink:hover{color:#2f3138; transition:color .4s ease-in-out;}
+
+
+
+  @media only screen and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    body,
+  html {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+
+    .middle {
+      white-space: normal;
+      overflow-x: hidden;
+      height: unset;
+      width: 100%;
+    }
+
+
+    .ssImage {
+      display: block;
+    }
+
+    .ssImage img {
+      height: auto;
+      width: 100%;
+
+    }
+
+    .midContent{
+    display: none;
+  }
+
+  #footer{
+   display: none;
+  }
+
+  }
+
+
+</style>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MY3F8PGD3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MY3F8PGD3G');
+</script>
+
+<title>Glamzy |Me</title>
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+
+
+  <meta name="Description" content="Try on and discover new makeup. Blending and style controls allow you to customize your virtual makeup with ease. Save and share your finished looks and favorite products with anyone in just a few taps.">
+  <meta name="Keywords" content="Glamzy Me Facechart Facecharts Face Chart Cosmetics Brands Beauty Try On Makeup Virtual AR Augmented Reality">
+  <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"> -->
+  <!-- <meta property="og:image" content="fc.png" /> -->
+  <meta property="og:title" content="Glamzy Me - Try on and discover new makeup">
+  <meta name="twitter:title" content="Glamzy Me - Try on and discover new makeup">
+
+  <meta property="og:description" content="Try on and discover new makeup. Blending and style controls allow you to customize your virtual makeup with ease. Save and share your finished looks and favorite products with anyone in just a few taps.">
+  <meta name="twitter:description" content="Try on and discover new makeup. Blending and style controls allow you to customize your virtual makeup with ease. Save and share your finished looks and favorite products with anyone in just a few taps.">
+
+  <meta property="og:image" content="https://glamzy.com/me/img/site/home.jpg">
+  <meta name="twitter:image" content="https://glamzy.com/me/img/site/home.jpg">
+
+  <meta property="og:url" content="https://glamzy.com/me">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/misc.css"> -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div id="logo"><img src="img/site/logo_light.png" srcset="img/site/logo_light_r.png 2x"  srcset="img/site/logo_light_r.png 3x">
+    <div id="dlBtn"><a href="https://apps.apple.com/us/app/glamzy-me/id1550886242"><img src="img/site/dlStore.png" srcset="img/site/dlStore.png 2x" ></a></div>
+  </div>
+
+  <div id="sidebar">
+    <a href="#" class="hidethemail"
+    data-namepre="info"
+    data-domain="glamzy"
+    data-tld="com"
+    onclick="window.open('mailto:' + this.dataset.namepre + '@' + this.dataset.domain + '.' + this.dataset.tld,'_blank'); return false;">
+    <img src="img/site/icon_social_mail.png" srcset="img/site/icon_social_mail.png 2x"></a>
+    <a href="https://www.facebook.com/glamzyfacecharts" target="_blank"><img src="img/site/icon_social_fb.png" srcset="img/site/icon_social_fb.png 2x"></a>
+    <a href="https://www.instagram.com/glamzy_face_charts/" target="_blank"><img src="img/site/icon_social_insta.png" srcset="img/site/icon_social_insta.png 2x"></a>
+    <a href="https://twitter.com/GlamzyFaceChart" target="_blank"><img src="img/site/icon_social_twit.png" srcset="img/site/icon_social_twit.png 2x"></a>
+</div>
+
+<div id="imgContent" class="middle">
+    <div class="topImages">
+      <div>
+      <div class="ssImage shadowLeft"><img src="img/ss1.jpg" srcset="img/ss1_r.jpg 2x"></div>
+      <div class="ssImage shadowRight"><img src="img/ss2.jpg" srcset="img/ss2_r.jpg 2x"></div>
+      <div class="ssImage shadowRight"><img src="img/ss3.jpg" srcset="img/ss3_r.jpg 2x"></div>
+
+
+      <div class="ssImage shadowLeft"><img src="img/ss4.jpg" srcset="img/ss4_r.jpg 2x"></div>
+      <div class="ssImage shadowRight"><img src="img/ss5.jpg" srcset="img/ss5_r.jpg 2x"></div>
+      <div class="ssImage shadowRight"><img src="img/ss6.jpg" srcset="img/ss6_r.jpg 2x"></div>
+   </div>
+  </div>
+  <div class="bottomleft">
+    <!-- <p>Some text</p> -->
+  </div>
+  <div id="footer">
+    <div class="footerContent">
+      <div><a href="index.html"><img src="img/site/logo_blue.png" srcset="img/site/logo_light_r.png 2x"></a></div>
+    </div>
+    <div class="footerContent">
+      <p class="header3">EXPRESS YOUR STYLE.<br>
+        DISCOVER NEW MAKEUP.</p>
+      <a id="ctaFooter" href="https://apps.apple.com/us/app/glamzy-me/id1550886242">
+        <div class="pinkButtonLink">DOWNLOAD NOW</div>
+      </a>
+    </div>
+
+    <div class="footerContent">
+      <p>SUGGESTIONS OR QUESTIONS?</p>
+      <a href="#" class="hidethemail"
+      data-namepre="info"
+      data-domain="glamzy"
+      data-tld="com"
+      onclick="window.open('mailto:' + this.dataset.namepre + '@' + this.dataset.domain + '.' + this.dataset.tld,'_blank'); return false;">
+      <img src="img/site/aliens.png" srcset="img/site/aliens_r.png 2x"></a>
+    </div>
+
+    <div id="linkFooter"><a href="pp.html" target="_blank">Privacy Policy</a> - <a href="tou.html" target="_blank">Terms & Conditions</a> - &#169; 2020
+      Two* States* Away*</div>
+
+</div>
+
+</body>
+
+</html>
